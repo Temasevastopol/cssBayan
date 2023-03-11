@@ -21,9 +21,20 @@ body, article{
     font-size: 2.2em;
     line-height: 2.5em;
     
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
     color: #0d0d0d;
+}
+
+.label-mark{
+    width: 1em;
+    height: 1em;
+    /* border: solid black 1px; */
+    transform: rotateZ(45deg);
+    background-image: url(./assets/svg/black_cross.svg); 
+    transition: 0.3s ease-in-out;   
 }
 
 .mem-container label:hover{
@@ -36,6 +47,11 @@ body, article{
     background: #c6e1ec;
     color: #acb8cb;
 
+}
+
+.mem-container input:checked + label > .label-mark{
+    transform: rotateZ(0deg);
+    transition: 0.3s ease-in-out;   
 }
 
 .mem-container input{
