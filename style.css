@@ -85,8 +85,8 @@ body, article{
 /*  */
 
 @media (min-width: 320px){
-    .mem-container{
-        margin: 0px;
+    article{
+        padding: 0px;
     }
     .mem-container label{
         font-size: 1.5em;
